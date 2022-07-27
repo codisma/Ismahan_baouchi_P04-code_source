@@ -506,8 +506,9 @@ button {
 }
 
 .form-control {
-    border-color: #F3976C;
+    border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    color:#000;
 }
 
 .scrollToTop {
@@ -653,7 +654,9 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-
+.orange-bc {
+    background-color: #F3976C;
+}
 .container {
     max-width: 1000px;
 }
