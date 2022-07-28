@@ -22,7 +22,7 @@
 
     
 <!-- Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID">defer</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -42,9 +42,12 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.png" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.png" alt="Agence Webdesign la Panthère" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -61,7 +64,7 @@
 
 <!-- bloc-6 -->
 <Main>
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
@@ -69,13 +72,14 @@
 					Parlons web design !
 				</h1>
 				<p class="text-center mg-lg tc-white tight-width-whitespace">
-					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.
+					<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
@@ -83,7 +87,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate success-msg="Votre message a été envoyé." fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, Désolé pour le dérangement !">
 					<div class="form-group">
 						<label for="Nom">
 							Nom
@@ -100,12 +104,15 @@
 						<label for=" connaissance">
 							Comment nous avez-vous connu ?
 						</label>
-						<input  type="email" name="connaissance" class="form-control orange-bc" required="required" id="connaissance" />
+						<input  type="text" name="connaissance" id="connaissance" class="form-control orange-bc" required="required"  />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control orange-bc" rows="4" cols="50" required="required"></textarea>
+						</label>
+						<textarea  name="brief" id="message" class="form-control orange-bc" rows="4" cols="50" required="required">
+
+						</textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -114,7 +121,11 @@
 			</div>
 			<div class="col-sm-6">
 				<h2>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					contact@agencelapanthere.com
+					<br>
+					2 place Sathonay 69001 Lyon
+					<br>
+					Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</h2>
 			</div>
 		</div>
@@ -124,7 +135,9 @@
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a href="#" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="retour en haut de page">
+	<span class="fa fa-chevron-up"></span>
+</a>
 <!-- ScrollToTop Button END-->
 
 
@@ -139,22 +152,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="#" aria-label="twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="#" aria-label="facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="#" aria-label="dribble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="#" aria-label="instgram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
